@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-bg': '#F85559'
+              }
+            }
+          }
+        }
+    </script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-lato">
+    <header>
+        <nav class="mx-1 mt-12 lg:mx-12">
+            <div class="navbar lg:bg-primary-bg lg:py-6 lg:px-8 rounded-full">
+                <div class="navbar-start">
+                    <div class="hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-white">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                        </ul>
+                      </div>
+                    <div>
+                        <a class="btn btn-ghost normal-case lg:hidden">
+                            <div class="flex items-center justify-between gap-2">
+                                <img class="h-8" src="images/logo.png" alt="">
+                                <h1 class="text-xl font-extrabold ">Fruit Bursts</h1>
+                            </div>
+                        </a>
+                    </div>  
+
+                </div>
+                <div class="navbar-center hidden lg:contents">
+                  
+                  <a class="btn btn-ghost normal-case ">
+                   <div class="flex items-center justify-between gap-2">
+                    <img class="h-9" src="images/logo.png" alt="">
+                    <h1 class="text-3xl text-white font-bold">Fruit Bursts</h1>
+                   </div>
+                  </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="relative form-control hidden lg:contents">
+                        <input type="text" placeholder="Search here" class="input input-bordered lg:w-[400px] md:w-auto rounded-3xl" />
+                        <button class="absolute right-24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="dropdown lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 items-center -ml-20">
+                          <li><a>Home</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Search</a></li>
+                          <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

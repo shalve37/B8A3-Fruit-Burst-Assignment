@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,18 @@
     <!-- Tailwind and DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Tailwind custom color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-bg': '#F85559',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-bg': '#F85559',
+                    }
+                }
             }
-          }
         }
     </script>
     <!-- Google fonts -->
@@ -26,12 +27,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
+        }
+        .styled-hr{
+            width: 240px;
+            height: 1px;
+            margin: 16px 0px;
+            color: #1212121a;
         }
     </style>
 
 </head>
+
 <body class="font-lato">
     <header>
         <!-- navbar section -->
@@ -40,12 +48,12 @@
                 <div class="navbar-start">
                     <div class="hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 text-white">
-                          <li><a>Home</a></li>
-                          <li><a>About Us</a></li>
-                          <li><a>Shop</a></li>
-                          <li><a>All Fruits</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
                         </ul>
-                      </div>
+                    </div>
                     <div>
                         <a class="btn btn-ghost normal-case lg:hidden">
                             <div class="flex items-center justify-between gap-2">
@@ -53,41 +61,51 @@
                                 <h1 class="text-xl font-extrabold ">Fruit Bursts</h1>
                             </div>
                         </a>
-                    </div>  
+                    </div>
 
                 </div>
                 <div class="navbar-center hidden lg:contents">
-                  
-                  <a class="btn btn-ghost normal-case ">
-                   <div class="flex items-center justify-between gap-2">
-                    <img class="h-9" src="images/logo.png" alt="">
-                    <h1 class="text-3xl text-white font-bold">Fruit Bursts</h1>
-                   </div>
-                  </a>
+
+                    <a class="btn btn-ghost normal-case ">
+                        <div class="flex items-center justify-between gap-2">
+                            <img class="h-9" src="images/logo.png" alt="">
+                            <h1 class="text-3xl text-white font-bold">Fruit Bursts</h1>
+                        </div>
+                    </a>
                 </div>
                 <div class="navbar-end">
                     <div class="relative form-control hidden lg:contents">
-                        <input type="text" placeholder="Search here" class="input input-bordered lg:w-[400px] md:w-auto rounded-3xl" />
+                        <input type="text" placeholder="Search here"
+                            class="input input-bordered lg:w-[400px] md:w-auto rounded-3xl" />
                         <button class="absolute right-24">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </div>
                     <div class="dropdown lg:hidden">
                         <label tabindex="0" class="btn btn-ghost btn-circle">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
                         </label>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 items-center -ml-20">
-                          <li><a>Home</a></li>
-                          <li><a>Shop</a></li>
-                          <li><a>About Us</a></li>
-                          <li><a>Search</a></li>
-                          <li><a>All Fruits</a></li>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 items-center -ml-20">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Search</a></li>
+                            <li><a>All Fruits</a></li>
                         </ul>
                     </div>
                 </div>
-              </div>
+            </div>
         </nav>
         <!-- banner section -->
         <section class="relative flex flex-col justify-center lg:mb-24">
@@ -96,69 +114,83 @@
                     <div class="hero" style="background-image: url(images/banner4.png);">
                         <div class="w-full h-full bg-gradient-to-b from-[#12121275] to-[#12121200] "></div>
                         <div class="hero-content text-center text-neutral-content">
-                          <div class="max-w-md">
-                            <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-white font-base">We supply highly quality organic products</p>
-                            <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop Now</button>
-                          </div>
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class="mb-5 text-white font-base">We supply highly quality organic products</p>
+                                <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop
+                                    Now</button>
+                            </div>
                         </div>
-                      </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
-                    <a href="#slide4" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a> 
-                    <a href="#slide2" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
-                  </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
+                        <a href="#slide4" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
+                    </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(images/banner1.png);">
                         <div class="w-full h-full bg-gradient-to-b from-[#12121275] to-[#12121200] "></div>
                         <div class="hero-content text-center text-neutral-content">
-                          <div class="max-w-md">
-                            <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-white font-base">We supply highly quality organic products</p>
-                            <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop Now</button>
-                          </div>
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class="mb-5 text-white font-base">We supply highly quality organic products</p>
+                                <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop
+                                    Now</button>
+                            </div>
                         </div>
-                      </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
-                    <a href="#slide1" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a> 
-                    <a href="#slide3" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
-                  </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
+                        <a href="#slide1" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
+                    </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(images/banner2.png);">
                         <div class="w-full h-full bg-gradient-to-b from-[#12121275] to-[#12121200] "></div>
                         <div class="hero-content text-center text-neutral-content">
-                          <div class="max-w-md">
-                            <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-white font-base">We supply highly quality organic products</p>
-                            <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop Now</button>
-                          </div>
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class="mb-5 text-white font-base">We supply highly quality organic products</p>
+                                <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop
+                                    Now</button>
+                            </div>
                         </div>
-                      </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
-                    <a href="#slide2" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a> 
-                    <a href="#slide4" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
-                  </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
+                        <a href="#slide2" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a>
+                        <a href="#slide4" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
+                    </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(images/banner3.png);">
                         <div class="w-full h-full bg-gradient-to-b from-[#12121275] to-[#12121200] "></div>
                         <div class="hero-content text-center text-neutral-content">
-                          <div class="max-w-md">
-                            <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5 text-white lg:text-base font-base">We supply highly quality organic products</p>
-                            <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop Now</button>
-                          </div>
+                            <div class="max-w-md">
+                                <h1 class="mb-5 text-white text-3xl lg:text-5xl font-extrabold">Exotic tastes at your
+                                    doorstep</h1>
+                                <p class="mb-5 text-white lg:text-base font-base">We supply highly quality organic
+                                    products</p>
+                                <button class="btn normal-case text-white font-bold bg-primary-bg border-none">Shop
+                                    Now</button>
+                            </div>
                         </div>
-                      </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
-                    <a href="#slide3" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a> 
-                    <a href="#slide1" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
-                  </div>
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-1.5 lg:left-5 right-2 lg:right-5 top-40 lg:top-1/2">
+                        <a href="#slide3" class="btn btn-circle  text-white bg-[#12121250] border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle  text-white bg-[#12121250] border-none">❯</a>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="hidden absolute -bottom-12 left-52 lg:flex flex-row justify-center gap-12 bg-white shadow-xl py-5 px-5 rounded-lg">
+            </div>
+            <div
+                class="hidden absolute -bottom-12 left-52 lg:flex flex-row justify-center gap-12 bg-white shadow-xl py-5 px-5 rounded-lg">
                 <div class="flex flex-col">
                     <img src="images/fruit1.png" alt="">
                     <p class="text-center text-[#121212cc]">Grapes</p>
@@ -179,17 +211,175 @@
                     <img src="images/fruit5.png" alt="">
                     <p class="text-center text-[#121212cc]">Pomegranates</p>
                 </div>
-              </div>
+            </div>
         </section>
     </header>
     <main>
         <!-- deals of the day section -->
-        <section>
+        <section class="mx-8 lg:mx-16">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-8">
+                <div>
+                    <h2 class="text-3xl lg:text-5xl font-extrabold text-center lg:text-left">Deal of the day</h2>
+                    <p class="text-[#12121299] pt-6 lg:w-[600px] text-center lg:text-left">Contrary to popular belief,
+                        is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <!-- Timer -->
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-extrabold text-4xl lg:text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="mt-2 lg:mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-extrabold text-4xl lg:text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="mt-2 lg:mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-extrabold text-4xl lg:text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="mt-2 lg:mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-extrabold text-4xl lg:text-5xl">
+                                <span style="--value:29;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 my-8">
+                <!-- Card 1 -->
+                <div class="card bg-base-100 border-[1px] border-[#1212121a]">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">12.90$ - 18.85$</h2>
+                      <hr class="styled-hr">
+                      <p class="text-[#12121299]">Apple</p>
+                      <div class="py-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                            <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="card-actions">
+                        <a class="text-primary-bg font-bold cursor-pointer">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                <div class="card bg-base-100 border-[1px] border-[#1212121a]">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">12.90$ - 18.85$</h2>
+                      <hr class="styled-hr">
+                      <p class="text-[#12121299]">Orange</p>
+                      <div class="py-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                            <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="card-actions">
+                        <a class="text-primary-bg font-bold cursor-pointer">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 -->
+                <div class="card bg-base-100 border-[1px] border-[#1212121a]">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">12.90$ - 18.85$</h2>
+                      <hr class="styled-hr">
+                      <p class="text-[#12121299]">Red Dragon</p>
+                      <div class="py-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                            <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="card-actions">
+                        <a class="text-primary-bg font-bold cursor-pointer">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                <div class="card bg-base-100 border-[1px] border-[#1212121a]">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">12.90$ - 18.85$</h2>
+                      <hr class="styled-hr">
+                      <p class="text-[#12121299]">Banana</p>
+                      <div class="py-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                            <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="card-actions">
+                        <a class="text-primary-bg font-bold cursor-pointer">Details</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
